@@ -1,0 +1,17 @@
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+@mixin btn-logo($color:darkblue) {
+    height: 40px;
+    width: 300px;
+    background-color: $color;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+

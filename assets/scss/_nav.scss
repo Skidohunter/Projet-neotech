@@ -1,0 +1,42 @@
+nav{
+    background-color: darkblue;
+    color: white;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+  }
+  
+  .nav-gauche{
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-droite{
+    @include flex-row;
+    
+  }
+
+  nav ul{
+    @include flex-row;
+  }
+  
+
+  nav a{
+    text-decoration: none;
+    font-family: "Montserrat-Bold";   
+    color: white;
+}
+
+.logo-nav-droite i{
+    padding-left: 20px;
+}
+
+nav input{
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding-right: 10px;
+}
