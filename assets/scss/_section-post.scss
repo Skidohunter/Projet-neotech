@@ -1,0 +1,226 @@
+// POSTS//
+p{
+    margin: 0;
+}
+.posts{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.latest{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.latest-row{
+    display: flex;
+
+}
+
+.texte-latest{
+    padding-left: 30px;
+}
+h3{
+    color:$red;
+}
+
+h4{
+    color: $red;
+    font-size: 1rem;
+}
+
+.date{
+    color: gray;
+    padding: 10px 0;
+}
+
+.texte-latest p:first-of-type{
+    font-weight: bold;
+}
+
+.texte-latest :nth-child(3){
+    font-weight: bold;
+}
+
+
+
+// POPULAR-POSTS//
+
+.popular-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 100px;
+}
+
+.popular-posts{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.text-popular{
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.apple::before{
+    content: "1"; 
+}
+
+.business::before{ 
+    content: "2"; 
+}
+
+.iphone::before{  
+    content: "3";
+}
+
+.campus::before{
+    content: "4";
+}
+
+.media::before{   
+    content: "5";
+}
+
+.popular-posts::before{
+    box-shadow:inset 0px 1px 0px 0px #ff1500;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:50%;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff1100;
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+ 
+}
+
+
+// SUB//
+
+.subscribe{
+    font-weight: bold;
+    padding-left: 80px;
+}
+
+.border-sub{
+    border: 5px solid lightgray;
+    padding:22px;
+    padding-right: 35px;
+}
+
+.e-mail{
+    padding-top: 15px;
+    position: relative;
+    
+}
+
+.input{
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px;
+   
+}
+
+.fa-regular{
+    position: absolute;
+    bottom: 10px;
+    left: 5px; 
+}
+.input{
+    padding-left: 30px;
+}
+
+.btn-sub{
+    padding-top: 15px;
+}
+
+.sub{
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(252,86,70,1) 48%, rgba(255,125,18,1) 95%);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.sub:hover{
+    background: linear-gradient(90deg,rgba(255,125,18,1) 48%, rgba(252,86,70,1) 95%);
+    font-size: 1.5rem;
+    border: solid 3px black;
+    box-shadow: 0px 5px;
+}
+// BTN LOGO//
+
+.btn-pop h4{
+    font-weight: bold;
+}
+
+.btn-pop {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    padding-left: 80px;
+}
+
+.btn-pop a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    @include btn-logo;
+    transition: 0.6s ease-in-out;
+}
+
+.btn-pop i{
+    padding-right: 20px;
+}
+
+.btn-pop :nth-child(2){
+    @include btn-logo(lightblue );
+}
+
+.btn-pop :nth-child(3){
+    @include btn-logo(red );
+}
+
+.btn-pop :nth-child(4){
+    @include btn-logo(purple );
+}
+
+.btn-pop a:hover{
+    justify-content: flex-end;
+}
+
+// DELIVER//
+
+.deliver{
+    padding-left: 80px;
+}

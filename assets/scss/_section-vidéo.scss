@@ -1,0 +1,35 @@
+// LATEST//
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.latest-column{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texte-later{
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-posts{
+    border: 2px solid lightgray;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-latest{
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.latest-column div:first-child{
+    background-color: lightgrey;
+}

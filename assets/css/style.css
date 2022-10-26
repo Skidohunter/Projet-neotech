@@ -11,6 +11,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  font-family: "Montserrat-Regular";
 }
 
 ul {
@@ -71,6 +72,53 @@ li {
 .buy {
   margin: auto;
   padding-top: 50px;
+}
+
+nav {
+  background-color: darkblue;
+  color: white;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-gauche {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-droite {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Montserrat-Bold";
+  color: white;
+}
+
+.logo-nav-droite i {
+  padding-left: 20px;
+}
+
+nav input {
+  background-color: darkblue;
+  border: none;
+  color: white;
+  padding-right: 10px;
 }
 
 p {
@@ -328,7 +376,6 @@ h4 {
   padding: 8px;
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 
 .text-latest {
@@ -338,51 +385,4 @@ h4 {
 
 .latest-column div:first-child {
   background-color: lightgrey;
-}
-
-nav {
-  background-color: darkblue;
-  color: white;
-  width: auto;
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav-gauche {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-droite {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  font-family: "Montserrat-Bold";
-  color: white;
-}
-
-.logo-nav-droite i {
-  padding-left: 20px;
-}
-
-nav input {
-  background-color: darkblue;
-  border: none;
-  color: white;
-  padding-right: 10px;
 }/*# sourceMappingURL=style.css.map */
